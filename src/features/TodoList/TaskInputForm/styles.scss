@@ -2,23 +2,34 @@
   display: flex;
   column-gap: 20px;
   justify-content: center;
+  align-items: flex-start;
 
-  &__input {
-    flex: 0.5;
-    font-size: 1.6rem;
-    font-weight: 600;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    padding: 8px;
-  }
+  .task-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    .task-input {
+      flex: 0.5;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      padding: 8px;
 
-  &__input:focus {
-    outline: none;
+      &__error {
+        color: red;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+
+    .task-input:focus {
+      outline: none;
+    }
   }
 
   &__btn {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding: 13px;
     display: flex;
     align-items: center;
     border: none;
