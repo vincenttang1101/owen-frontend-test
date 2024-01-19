@@ -1,10 +1,12 @@
 import { Header, Footer } from '@components'
+import { IMainLayout } from '@typing'
+import './styles.scss'
 
-export default function MainLayout({ children }: any) {
+export default function MainLayout({ children }: IMainLayout) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className='main'>{children}</main>
       <Footer />
     </>
   )

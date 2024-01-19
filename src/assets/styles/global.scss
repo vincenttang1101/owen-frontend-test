@@ -23,6 +23,14 @@ body {
   scroll-behavior: smooth;
 }
 
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .container {
   margin: 0 auto;
   width: var(--container-with);

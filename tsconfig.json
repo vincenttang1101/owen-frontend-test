@@ -24,8 +24,6 @@
       "@assets/*": ["./assets/*"],
       "@components/*": ["./components/*"],
       "@components": ["./components"],
-      "@constants/*": ["./constants/*"],
-      "@constants": ["./constants"],
       "@features/*": ["./features/*"],
       "@features": ["./features"],
       "@redux/*": ["./redux/*"],
