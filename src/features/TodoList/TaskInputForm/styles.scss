@@ -1,3 +1,5 @@
+@import '../../../assets/styles/mixins';
+
 .task-form {
   display: flex;
   column-gap: 20px;
@@ -31,7 +33,7 @@
   &__btn {
     padding: 13px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -40,5 +42,13 @@
 
   &__btn:hover {
     opacity: 0.9;
+  }
+}
+
+@include smallDeviceSize {
+  .task-form {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: stretch;
   }
 }

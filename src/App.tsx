@@ -1,6 +1,6 @@
 import { MainLayout } from '@components'
 import { TodoList } from '@features'
-import './App.css'
+import './App.scss'
 
 function App() {
   return (

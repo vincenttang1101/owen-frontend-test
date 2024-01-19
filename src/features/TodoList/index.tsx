@@ -21,11 +21,13 @@ export default function TodoList() {
             <TaskInputForm />
           </div>
 
-          {/* Todo List */}
-          <div className='todo-list__list'>
-            {todoList.map((task) => (
-              <TaskItem key={task.id} task={task} />
-            ))}
+          {/* Todos */}
+          <div className='todo-list__todos'>
+            {todoList.length > 0 ? (
+              todoList.map((task) => <TaskItem key={task.id} task={task} />)
+            ) : (
+              <p className='todo-list__not-found'>No task found</p>
+            )}
           </div>
         </div>
       </div>

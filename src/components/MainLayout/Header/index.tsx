@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Logo } from '@assets/icons'
 import './styles.scss'
-import { IoMenu } from 'react-icons/io5'
 
 export default function Header() {
   return (
@@ -28,18 +27,8 @@ export default function Header() {
                   Home
                 </Link>
               </li>
-
-              {/* Navbar item 2 */}
-              <li className='navbar__item'>
-                <Link to='#!' className='navbar-item__link'>
-                  Contact
-                </Link>
-              </li>
             </ul>
           </nav>
-
-          {/* Menu icon */}
-          <IoMenu className='menu-icon' />
         </div>
       </div>
     </header>

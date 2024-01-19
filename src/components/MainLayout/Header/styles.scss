@@ -1,8 +1,10 @@
+@import '../../../assets/styles/mixins';
+
 .header {
   background: #202020;
-  padding: 15px 0;
 
   .body {
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +54,15 @@
   }
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    display: none;
+@include smallDeviceSize {
+  .header {
+    .brand {
+      margin: 0 auto;
+    }
+    .navbar {
+      display: none;
+    }
   }
-
   .menu-icon {
     display: inline-block !important;
     color: #fff;

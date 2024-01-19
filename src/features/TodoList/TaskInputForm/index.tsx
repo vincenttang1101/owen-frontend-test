@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import { FaPlus, FaPenAlt } from 'react-icons/fa'
