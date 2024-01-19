@@ -19,12 +19,16 @@ export default function Header() {
 
           {/* navbar */}
           <nav className='navbar'>
+            {/* Navbar list */}
             <ul className='navbar__list'>
+              {/* Navbar item 1 */}
               <li className='navbar-item'>
                 <Link to='/' className='navbar-item__link'>
                   Home
                 </Link>
               </li>
+
+              {/* Navbar item 2 */}
               <li className='navbar__item'>
                 <Link to='#!' className='navbar-item__link'>
                   Contact
@@ -33,6 +37,7 @@ export default function Header() {
             </ul>
           </nav>
 
+          {/* Menu icon */}
           <IoMenu className='menu-icon' />
         </div>
       </div>
