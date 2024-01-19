@@ -1,0 +1,27 @@
+.todos {
+  margin-top: 40px;
+  padding: 0 400px;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 16px solid #ecedf6;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background: #fcfdfd;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}

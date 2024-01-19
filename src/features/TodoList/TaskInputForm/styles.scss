@@ -1,0 +1,30 @@
+.task-form {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+
+  &__input {
+    flex: 0.5;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 12px;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+
+  &__btn {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+
+    &--add {
+      opacity: 0.9;
+    }
+  }
+}

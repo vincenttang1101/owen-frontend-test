@@ -8,6 +8,7 @@ export default function Header() {
     <header className='header'>
       {/* Container */}
       <div className='container'>
+        {/* Body */}
         <div className='body'>
           {/* Brand */}
           <div className='brand'>
