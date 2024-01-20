@@ -107,6 +107,7 @@ In summary:
   1. Ability to add new task.
   2. Ability to mark tasks as completed.
   3. Ability to delete task.
+  4. Ability to paginate tasks.
   3. Ability to display on mobile/tablet/desktop devices (Responsive desgin).
   4. Synchronize redux data with localstorage.
   5. Use Redux Toolkit to manage state.
