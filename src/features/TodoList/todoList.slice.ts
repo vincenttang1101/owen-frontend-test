@@ -23,12 +23,12 @@ export const todoListSlice = createSlice({
   reducers: {
     addTask: (state, action: PayloadAction<ITask>) => {
       const todo = action.payload
-      state.todoList.push(todo)
+      state.todoList.unshift(todo)
 
       const todoList = window.localStorage.getItem('todoList')
       if (todoList) {
         const todoListParse: ITask[] = JSON.parse(todoList)
-        todoListParse.push(todo)
+        todoListParse.unshift(todo)
         localStorage.setItem('todoList', JSON.stringify(todoListParse))
       } else window.localStorage.setItem('todoList', JSON.stringify([]))
     },
