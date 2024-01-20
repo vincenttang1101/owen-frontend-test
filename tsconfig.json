@@ -19,16 +19,18 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@assets/*": ["./assets/*"],
-      "@components/*": ["./components/*"],
-      "@components": ["./components"],
-      "@features/*": ["./features/*"],
-      "@features": ["./features"],
-      "@redux/*": ["./redux/*"],
-      "@typing/*": ["./typing/*"],
-      "@typing": ["./typing"]
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@components": ["./src/components"],
+      "@features/*": ["./src/features/*"],
+      "@features": ["./src/features"],
+      "@redux/*": ["./src/redux/*"],
+      "@src/*": ["./src/*"],
+      "@src": ["./src/"],
+      "@typing/*": ["./src/typing/*"],
+      "@typing": ["./src/typing"]
     }
   },
   "include": ["src"],
