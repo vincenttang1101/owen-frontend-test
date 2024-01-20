@@ -12,6 +12,7 @@ export interface IAddOrUpdateStatus {
 export interface ITodoListState {
   todoList: ITask[]
   addOrUpdateStatus: IAddOrUpdateStatus
+  activedIndex: number
 }
 
 export interface IUpdateTaskPayload {

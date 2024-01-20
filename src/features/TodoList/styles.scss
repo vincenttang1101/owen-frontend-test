@@ -32,6 +32,34 @@
     text-align: center;
     font-weight: 700;
   }
+
+  &__pagination {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  .pagination-item {
+    flex-shrink: 0;
+    padding: 10px;
+    border-radius: 3px;
+    background: black;
+    cursor: pointer;
+
+    &__number {
+      color: #fff;
+      font-weight: 700;
+
+      &--active {
+        color: blue;
+      }
+    }
+  }
+
+  .pagination-item:hover {
+    background: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  }
 }
 
 @include largeDeviceSize {

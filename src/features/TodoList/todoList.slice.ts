@@ -14,7 +14,8 @@ const initialState: ITodoListState = {
   todoList: getInitialTodoList(),
   addOrUpdateStatus: {
     action: 'add'
-  }
+  },
+  activedIndex: 1
 }
 
 export const todoListSlice = createSlice({
@@ -22,13 +23,17 @@ export const todoListSlice = createSlice({
   initialState,
   reducers: {
     addTask: (state, action: PayloadAction<ITask>) => {
-      const todo = action.payload
-      state.todoList.unshift(todo)
+      const task = action.payload
 
-      const todoList = window.localStorage.getItem('todoList')
+      const itemsPerPage = 5
+      const startIndex = (state.activedIndex - 1) * itemsPerPage
+
+      state.todoList.splice(startIndex, 0, task)
+
+      const todoList = localStorage.getItem('todoList')
       if (todoList) {
-        const todoListParse: ITask[] = JSON.parse(todoList)
-        todoListParse.unshift(todo)
+        const todoListParse = JSON.parse(todoList)
+        todoListParse.splice(startIndex, 0, task)
         localStorage.setItem('todoList', JSON.stringify(todoListParse))
       } else window.localStorage.setItem('todoList', JSON.stringify([]))
     },
@@ -67,6 +72,10 @@ export const todoListSlice = createSlice({
         localStorage.setItem('todoList', JSON.stringify(todoListParse))
       } else window.localStorage.setItem('todoList', JSON.stringify([]))
     },
+    updateActivedIndex: (state, action: PayloadAction<number>) => {
+      const numberPage = action.payload
+      state.activedIndex = numberPage
+    },
     toggleAddOrUpdateStatus: (state, action: PayloadAction<IAddOrUpdateStatus>) => {
       state.addOrUpdateStatus.action = action.payload.action
       state.addOrUpdateStatus.valueOfUpdate = action.payload.valueOfUpdate
@@ -74,5 +83,5 @@ export const todoListSlice = createSlice({
   }
 })
 
-export const { addTask, updateTask, removeTask, toggleAddOrUpdateStatus } = todoListSlice.actions
+export const { addTask, updateTask, removeTask, updateActivedIndex, toggleAddOrUpdateStatus } = todoListSlice.actions
 export default todoListSlice.reducer
