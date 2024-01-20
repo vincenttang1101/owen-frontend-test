@@ -108,8 +108,8 @@ In summary:
   2. Ability to mark tasks as completed.
   3. Ability to delete task.
   4. Ability to paginate tasks.
-  3. Ability to display on mobile/tablet/desktop devices (Responsive desgin).
-  4. Synchronize redux data with localstorage.
-  5. Use Redux Toolkit to manage state.
-  6. Ensure the UI/UX of the app is clean and friendly.
+  5. Ability to display on mobile/tablet/desktop devices (Responsive desgin).
+  6. Synchronize redux data with localstorage.
+  7. Use Redux Toolkit to manage state.
+  8. Ensure the UI/UX of the app is clean and friendly.
 ```
