@@ -104,11 +104,11 @@ In summary:
 ## Features
 
 ```
-  Ability to add new task.
-  Ability to mark tasks as completed.
-  Ability to delete task.
-  Ability to display on mobile/tablet/desktop devices (Responsive desgin).
-  Synchronize redux data with localstorage.
-  Use Redux Toolkit to manage state.
-  Ensure the UI/UX of the app is clean and friendly.
+  1. Ability to add new task.
+  2. Ability to mark tasks as completed.
+  3. Ability to delete task.
+  3. Ability to display on mobile/tablet/desktop devices (Responsive desgin).
+  4. Synchronize redux data with localstorage.
+  5. Use Redux Toolkit to manage state.
+  6. Ensure the UI/UX of the app is clean and friendly.
 ```
